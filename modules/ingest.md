@@ -6,7 +6,7 @@ Updated by: Sanhawat Taongern | Amazon Web Services | [Linkedin](https://www.lin
 
 ![Architecture Diagram](../img/ingest.png)
 
-# Pre-requisites:  
+# Pre-requisites:
 * You need to have access to an AWS account with **AdminstratorAccess**
 * This lab should be executed in **Singapore(ap-southeast-1)** region
 * Best is to **follow links from this  guide** & open them **in new a tab**
@@ -86,7 +86,7 @@ In this step we will create navigate to Kinesis Console & create a Kinesis Fireh
 In this step we will configure Kinesis Data Generator to produce fake data and ingest it into Kinesis Firehose
 
 * **Configure Amazon Cognito** for Kinesis Data Generator - In this step we will launch a cloud formation stack that will configure Cognito. This cloudformation scripts launches in **Oregon region** (No need to change this region)
-    * Goto : https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Kinesis-Data-Generator-Cognito-User&templateURL=https://aws-kdg-tools-us-east-1.s3.amazonaws.com/cognito-setup.json
+    * Goto : https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=Kinesis-Data-Generator-Cognito-User&templateURL=https://aws-kdg-tools-ap-southeast-1.s3.amazonaws.com/cognito-setup.json
     * Click - **Next**
     * Specify Details:
         * Username - **admin**
@@ -121,7 +121,7 @@ Once the tools send ~ 100,000 messages, you can click on - **Stop sending data t
   "device_temp": {{random.weightedArrayElement(
     {"weights":[0.30, 0.30, 0.20, 0.20],"data":[32, 34, 28, 40]}
   )}},
-  "track_id": {{random.number(30)}},  
+  "track_id": {{random.number(30)}},
   "activity_type": {{random.weightedArrayElement(
         {
             "weights": [0.1, 0.2, 0.2, 0.3, 0.2],
@@ -137,7 +137,7 @@ Once the tools send ~ 100,000 messages, you can click on - **Stop sending data t
 After few moments GoTo S3 console:https://s3.console.aws.amazon.com/s3/home?region=ap-southeast-1
 
 * Click - **yourname-datalake-demo-bucket > Data**
-* There should be a folder called **raw** created > Open it and keep navigating, you will notice that firehose has dumped the data in S3 using **yyyy/mm/dd/hh** partitioning 
+* There should be a folder called **raw** created > Open it and keep navigating, you will notice that firehose has dumped the data in S3 using **yyyy/mm/dd/hh** partitioning
 
 
 

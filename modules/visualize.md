@@ -6,8 +6,8 @@ Updated by: Sanhawat Taongern | Amazon Web Services | [Linkedin](https://www.lin
 
 ![Architecture Diagram](../img/visualize.png)
 
-# Pre-requisites:  
-Completed the previous modules   
+# Pre-requisites:
+Completed the previous modules
 * Ingest and Storage [link](../modules/ingest.md)
 * Catalog Data [link](../modules/catalog.md)
 * Transform Data with AWS Glue [link](../modules/transform_glue.md)
@@ -20,14 +20,14 @@ In this step we will visualize it using QuickSight
 
 Login to Amazon Quick Sight Console & complete the registration & sign-up
 
-* GoTo: https://us-east-1.quicksight.aws.amazon.com/sn/start
-* You should see quicksight hompage: 
+* GoTo: https://ap-southeast-1.quicksight.aws.amazon.com/sn/start
+* You should see quicksight hompage:
 ![
 ](../img/quicksight_home_page.jpg)
 
 ## Setting QuickSight Permissions
 
-* GoTo: https://us-east-1.quicksight.aws.amazon.com/sn/console/resources?#
+* GoTo: https://ap-southeast-1.quicksight.aws.amazon.com/sn/console/resources?#
 * Select: **Amazon Athena**  - this enables QuickSight access to Amazon Athena databases
 * Select: **Amazon S3**
 	* Select: **yourname-datalake-demo-bucket**
@@ -43,15 +43,15 @@ Login to Amazon Quick Sight Console & complete the registration & sign-up
 
 ## Adding a New Dataset
 
-* GoTo: https://us-east-1.quicksight.aws.amazon.com/sn/start
+* GoTo: https://ap-southeast-1.quicksight.aws.amazon.com/sn/start
 * On top right, Click - **Manage Data**
     * Click - **New Data Set**
-    * Click - **Athena** 
+    * Click - **Athena**
     * New Athena data source
         * Data source name: **summitdemo**
-        * Click - Validate Connection 
+        * Click - Validate Connection
             * This will check if your QuickSight can access Athena
-            * If validation fails - click on your username on top-right > 
+            * If validation fails - click on your username on top-right >
         * Click - **Create data source**
     * Choose your table:
         * Database: contain sets of tables: select - **summitdb**
