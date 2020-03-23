@@ -2,7 +2,7 @@
 
 Author: Unni Pillai | Amazon Web Services | [Twitter](https://twitter.com/unni_k_pillai) | [Linkedin](http://bit.ly/upillai)
 
-Updated by: Vikas Omer | Amazon Web Services | [Linkedin](https://www.linkedin.com/in/vikas-omer/)
+Updated by: Sanhawat Taongern | Amazon Web Services | [Linkedin](https://www.linkedin.com/in/sanhawat-taongern)
 
 
 # Clean Up
@@ -13,33 +13,33 @@ Make sure you bring down / delete all resources created as part of this lab
 
 ## Resources to delete
 * Kinesis Firehose Delivery Stream
-	* GoTo: https://console.aws.amazon.com/firehose/home?region=us-east-1#/
+	* GoTo: https://console.aws.amazon.com/firehose/home?region=ap-southeast-1#/
 	* Delete Firehose:  **sg-summit-demo-stream**
 * Lambda
-	* GoTo: https://console.aws.amazon.com/lambda/home?region=us-east-1
+	* GoTo: https://console.aws.amazon.com/lambda/home?region=ap-southeast-1
 	* Navigate to list of functions and select **top5Songs**.
 	* Under **Actions** drop down menu, select **Delete**.
 * Glue Database
-	* GoTo: https://console.aws.amazon.com/glue/home?region=us-east-1#catalog:tab=databases
+	* GoTo: https://console.aws.amazon.com/glue/home?region=ap-southeast-1#catalog:tab=databases
 	* Delete Database: **summitdb**
 * Glue Crawler
-	* GoTo: https://console.aws.amazon.com/glue/home?region=us-east-1#catalog:tab=crawlers
+	* GoTo: https://console.aws.amazon.com/glue/home?region=ap-southeast-1#catalog:tab=crawlers
 	* Delete Crawler: **summitcrawler**
 * Glue Dev Endpoint
-	* GoTo: https://console.aws.amazon.com/glue/home?region=us-east-1#etl:tab=devEndpoints
+	* GoTo: https://console.aws.amazon.com/glue/home?region=ap-southeast-1#etl:tab=devEndpoints
 	* Delete endpoint: **devendpoint1**
 * Sagemaker Notebook
 	* You may wish you download the notebook file locally on your laptop before deleting the notebook)
-	* GoTo: https://console.aws.amazon.com/glue/home?region=us-east-1#etl:tab=notebooks
+	* GoTo: https://console.aws.amazon.com/glue/home?region=ap-southeast-1#etl:tab=notebooks
 	* Delete Notebook: **aws-glue-notebook1**
 * Delete IAM Role
-	* GoTo: https://console.aws.amazon.com/iam/home?region=us-east-1#/roles
+	* GoTo: https://console.aws.amazon.com/iam/home?region=ap-southeast-1#/roles
 	* Search for AWSGlueServiceRoleDefault
 	* Delete Role: **AWSGlueServiceRoleDefault**
 	* Search for top5Songs in search box 
 	* Select and delete this role. [top5Songs-role-<id>]
 * Delete S3 bucket
-	* GoTo: https://s3.console.aws.amazon.com/s3/home?region=us-east-1
+	* GoTo: https://s3.console.aws.amazon.com/s3/home?region=ap-southeast-1
 	* Delete Bucket: **yourname-datalake-demo-bucket**
 * Delete Cognito Setup :
 	* Goto: https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/
