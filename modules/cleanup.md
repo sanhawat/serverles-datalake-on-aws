@@ -36,7 +36,7 @@ Make sure you bring down / delete all resources created as part of this lab
 	* GoTo: https://console.aws.amazon.com/iam/home?region=ap-southeast-1#/roles
 	* Search for AWSGlueServiceRoleDefault
 	* Delete Role: **AWSGlueServiceRoleDefault**
-	* Search for top5Songs in search box 
+	* Search for top5Songs in search box
 	* Select and delete this role. [top5Songs-role-<id>]
 * Delete S3 bucket
 	* GoTo: https://s3.console.aws.amazon.com/s3/home?region=ap-southeast-1
@@ -47,7 +47,7 @@ Make sure you bring down / delete all resources created as part of this lab
 	* Click: **Actions** > **DeleteStack**
 	* On confirmation screen: Click: **Delete**
 * Close QuickSight account
-	* GoTo: https://us-east-1.quicksight.aws.amazon.com/sn/admin#permissions
+	* GoTo: https://ap-southeast-1.quicksight.aws.amazon.com/sn/admin#permissions
 	* Click: **Unsubscribe**
 * Cognito Userpool
 	* GoTo: https://us-west-2.console.aws.amazon.com/cognito/users/?region=us-west-2#/
